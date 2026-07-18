@@ -348,7 +348,7 @@
         { q: '¿Detecta cobros por fuera de la plataforma?', a: 'Sí, y es uno de sus controles más importantes: alerta cuando detecta que una modelo solicita dinero fuera de la plataforma, protegiendo los ingresos del estudio.' },
         { q: '¿Qué hace el módulo de Nómina y ciclos?', a: 'Automatiza la nómina: cálculo de pagos, TRM en vivo, reportes PDF con tu branding y trazabilidad completa.' },
         { q: '¿Qué incluye la Analítica en vivo?', a: 'Rankings, métricas y tendencias de toda tu red, actualizados al instante.' },
-        { q: '¿Qué son las Operaciones centralizadas?', a: 'El panel de Super Admin, permisos por rol y control de múltiples estudios desde un solo lugar.' },
+        { q: '¿Qué son las Operaciones centralizadas?', a: 'Roles y permisos para tu equipo, y control de múltiples estudios desde un solo panel.' },
         { q: '¿Cómo funciona la automatización por WhatsApp?', a: 'Elitte Nexus contacta mánagers y modelos por WhatsApp, y envía alertas automáticas cuando Sentinel detecta cualquier situación que requiera atención.' },
       ],
     },
