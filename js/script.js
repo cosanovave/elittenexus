@@ -399,6 +399,11 @@
     bubble.textContent = text;
     messagesEl.appendChild(bubble);
     scrollToBottom();
+    return bubble;
+  };
+
+  const scrollToMessage = (bubble) => {
+    if (bubble) bubble.scrollIntoView({ block: 'start', behavior: 'smooth' });
   };
 
   const setReplies = (options) => {
@@ -422,21 +427,23 @@
   };
 
   const openCategory = (cat) => {
-    addMessage('user', cat.name);
+    const questionBubble = addMessage('user', cat.name);
     addMessage('bot', `Estas son las preguntas frecuentes sobre ${cat.name.toLowerCase()}:`);
     setReplies([
       ...cat.questions.map((item) => ({ label: item.q, onClick: () => openQuestion(cat, item) })),
       { label: '← Volver a categorías', ghost: true, onClick: () => showCategories(false) },
     ]);
+    scrollToMessage(questionBubble);
   };
 
   const openQuestion = (cat, item) => {
-    addMessage('user', item.q);
+    const questionBubble = addMessage('user', item.q);
     addMessage('bot', item.a);
     setReplies([
       ...cat.questions.filter((q) => q !== item).map((q) => ({ label: q.q, onClick: () => openQuestion(cat, q) })),
       { label: '← Volver a categorías', ghost: true, onClick: () => showCategories(false) },
     ]);
+    scrollToMessage(questionBubble);
   };
 
   let started = false;
