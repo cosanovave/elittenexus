@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elitte Nexus — Control Total para tu Estudio en Tiempo Real</title>
+<meta name="description" content="Elitte Nexus: monitoreo con IA, nómina y automatización por WhatsApp para estudios webcam. Escala de 5 a 500 salas. Planes desde $59/mes.">
+<meta name="theme-color" content="#10141C">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Elitte Nexus">
+<link rel="canonical" href="https://www.elittenexus.com/">
+
+<!-- Open Graph / Facebook, LinkedIn, WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.elittenexus.com/">
+<meta property="og:site_name" content="Elitte Nexus">
+<meta property="og:locale" content="es_CO">
+<meta property="og:title" content="Elitte Nexus — Control Total para tu Estudio en Tiempo Real">
+<meta property="og:description" content="Monitoreo con IA, nómina y automatización por WhatsApp para estudios webcam. Escala de 5 a 500 salas sin perder el control. Planes desde $59/mes.">
+<meta property="og:image" content="https://www.elittenexus.com/assets/hero-ops.jpg">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<meta property="og:image:alt" content="Elitte Nexus — sistema operativo para estudios webcam">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Elitte Nexus — Control Total para tu Estudio en Tiempo Real">
+<meta name="twitter:description" content="Monitoreo con IA, nómina y automatización por WhatsApp para estudios webcam. Planes desde $59/mes.">
+<meta name="twitter:image" content="https://www.elittenexus.com/assets/hero-ops.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="icon" href="../assets/brand/elitte-nexus-icon-2048x2048-fondo.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/brand/elitte-nexus-icon-2048x2048-fondo.png">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Datos estructurados: Organización -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Elitte Nexus",
+  "url": "https://www.elittenexus.com/",
+  "logo": "https://www.elittenexus.com/assets/brand/elitte-nexus-icon-2048x2048-fondo.png",
+  "description": "Sistema operativo para estudios webcam: monitoreo con IA, nómina y automatización por WhatsApp.",
+  "email": "contacto@elittenexus.com",
+  "telephone": "+573008587571",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bogotá",
+    "addressCountry": "CO"
+  },
+  "sameAs": [
+    "https://instagram.com/elittenexus",
+    "https://linkedin.com/company/[placeholder]",
+    "https://x.com/[placeholder]"
+  ]
+}
+</script>
+
+<!-- Datos estructurados: Producto y precios -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Elitte Nexus",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Monitoreo con IA, nómina y automatización por WhatsApp para estudios webcam. Escala de 5 a 500 salas.",
+  "offers": [
+    { "@type": "Offer", "name": "Básico", "price": "59", "priceCurrency": "USD", "url": "https://www.elittenexus.com/#planes" },
+    { "@type": "Offer", "name": "Pro", "price": "169", "priceCurrency": "USD", "url": "https://www.elittenexus.com/#planes" }
+  ]
+}
+</script>
+
+<!-- Datos estructurados: Preguntas frecuentes -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué tan seguros están los datos de mi estudio y mis modelos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "La seguridad opera en dos frentes: el de tu estudio y el del aplicativo. A nivel de estudio, la arquitectura es multi-tenant: nadie puede acceder a un estudio sin sus propias credenciales, y ningún estudio puede ver documentos ni información de otro estudio dentro de la plataforma — el aislamiento es total. A nivel de plataformas de streaming, Elitte Nexus nunca pide ni almacena las contraseñas de tus cuentas en StripChat, Chaturbate, BongaCams y demás sitios; no las necesita para operar, así que ese riesgo no existe ni aunque quisieras dárselas. A nivel de infraestructura, contamos con un módulo que detecta IPs que intentan ingresar de forma no autorizada, bloqueo automático de esos intentos, bloqueo de accesos por VPN, y protección respaldada por Firebase y Cloudflare — los mismos estándares que usan las plataformas más grandes del mundo. Esto incluye seguridad unificada basada en IA que protege la aplicación, las APIs y la red contra ataques DDoS, bots maliciosos y filtración de datos, sin sacrificar rendimiento ni disponibilidad." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tiempo toma poner en marcha mi estudio en la plataforma?",
+      "acceptedAnswer": { "@type": "Answer", "text": "El onboarding esencial (perfiles, documentos y conexión de salas) puede completarse en pocos días. Los planes Pro y Enterprise Plus incluyen acompañamiento dedicado para acelerar el proceso." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se integra con las plataformas donde ya transmito?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí. Elitte Nexus es compatible con StripChat, Chaturbate, BongaCams, CamSoda, Flirt4Free, MyFreeCams, Streamate, ePlay, Cams.com, CherryTV y ManyVids." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se comparan sus precios con otras plataformas del mercado?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nuestro plan Básico compite directo con las alternativas más económicas del mercado, pero incluye monitoreo con visión por computadora (Sentinel) y automatización por WhatsApp con IA." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo cancelar o cambiar de plan cuando lo necesite?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí, no manejamos cláusulas de permanencia. Los planes se ajustan al tamaño real de tu operación." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Malla interactiva: sigue el scroll y el cursor -->
+<canvas id="meshCanvas" aria-hidden="true"></canvas>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-xl fixed-top glass-nav" id="siteNav">
+  <div class="container">
+    <a class="navbar-brand" href="#top">
+      <img src="../assets/brand/elitte-nexus-icon-2048x2048-fondo.png" alt="" width="32" height="32">
+      ELITTE <span class="text-copper">NEXUS</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto nav-links-group">
+        <li class="nav-item"><a class="nav-link" href="#problema">El problema</a></li>
+        <li class="nav-item"><a class="nav-link" href="#solucion">Sentinel</a></li>
+        <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#modulos">Módulos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn-portal-inline" href="https://www.elittenexus.com/app/" target="_blank" rel="noopener">
+          <span aria-hidden="true">↗</span> Entrar al portal
+        </a>
+        <a class="btn btn-cta btn-sm" href="#empieza"><span aria-hidden="true">↗</span> Solicita tu demo</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="../assets/hero-ops.jpg" alt="" fetchpriority="high">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <p class="eyebrow eyebrow-light reveal">Tecnología Sentinel · Monitoreo con IA</p>
+        <h1 class="hero-title reveal">Control total para tu estudio <span class="text-gradient">en tiempo real</span></h1>
+        <p class="hero-lead reveal">Sentinel vigila cada sala, cada minuto del día. Detecta inactividad, fallas técnicas y hasta cobros por fuera de la plataforma — protegiendo cada peso que tu estudio genera, sin puntos ciegos ni excusas.</p>
+        <div class="hero-ctas reveal">
+          <a class="btn btn-cta btn-lg" href="#empieza"><span aria-hidden="true">↗</span> Solicita tu demo gratis</a>
+          <a class="btn btn-glass btn-lg" href="#solucion">Ver cómo funciona</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div><strong data-count="500">0</strong><span>salas en meta de escala</span></div>
+          <div><strong>24/7</strong><span>supervisión con IA activa</span></div>
+          <div><strong data-count="11">0</strong><span>plataformas compatibles</span></div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 d-none d-lg-block">
+        <div class="mockup-frame reveal">
+          <div class="mockup-glow" aria-hidden="true"></div>
+          <div class="mockup-panel tilt-target">
+            <div class="mockup-top">
+              <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+              <span class="mockup-label">Sentinel · Mission Control</span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-row">
+                <span class="mockup-chip live">En vivo</span>
+                <span class="mockup-chip">128 salas activas</span>
+              </div>
+              <div class="mockup-bars">
+                <span style="--h:70%"></span><span style="--h:92%"></span><span style="--h:48%"></span>
+                <span style="--h:83%"></span><span style="--h:60%"></span><span style="--h:95%"></span>
+                <span style="--h:40%"></span><span style="--h:77%"></span>
+              </div>
+              <div class="mockup-alert">
+                <span class="mockup-pulse" aria-hidden="true"></span>
+                Sentinel detectó inactividad en Sala 14 — hace 12 s
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</header>
+
+<main>
+
+  <!-- FRANJA DE CONFIANZA: prueba social + condiciones comerciales + presencia -->
+  <section class="trust-strip" aria-label="Confianza y condiciones comerciales">
+    <div class="container trust-strip-inner reveal">
+      <div class="trust-stat">
+        <strong>+XX<sup class="trust-stat-note">*</sup></strong>
+        <span>estudios ya operan<br>con Elitte Nexus</span>
+      </div>
+
+      <span class="trust-divider" aria-hidden="true"></span>
+
+      <p class="trust-location">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="15" height="15"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Bogotá, Colombia — expandiéndose a Latinoamérica
+      </p>
+
+      <span class="trust-divider" aria-hidden="true"></span>
+
+      <ul class="trust-terms">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          Sin instalación
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          Sin permanencia
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          Usuarios ilimitados
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          Almacenamiento sin límite
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PLATAFORMAS · OPCIÓN A: marquee clásico (como el sitio original) ============ -->
+  <section class="platforms-strip" aria-label="Plataformas compatibles">
+    <p class="variant-tag">Opción A · Cinta continua</p>
+    <div class="platforms-head">
+      <span class="platforms-line" aria-hidden="true"></span>
+      <p>Compatible con las plataformas que tu estudio ya usa</p>
+      <span class="platforms-line" aria-hidden="true"></span>
+    </div>
+    <div class="platforms-slider" aria-hidden="true">
+      <div class="platforms-track">
+        <div class="platform-logo"><img src="../assets/logos/stripchat.png" alt="StripChat" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/chaturbate.png" alt="Chaturbate" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/bongacams.png" alt="BongaCams" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/camsoda.png" alt="CamSoda" width="120" height="48"></div>
+        <div class="platform-logo platform-logo-dark"><img src="../assets/logos/flirt4free-white.png" alt="Flirt4Free" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/myfreecams.png" alt="MyFreeCams" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/streamate.png" alt="Streamate" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/eplay.png" alt="ePlay" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/cams.png" alt="Cams.com" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/cherrytv.png" alt="CherryTV" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/manyvids.png" alt="ManyVids" width="120" height="48"></div>
+        <!-- loop -->
+        <div class="platform-logo"><img src="../assets/logos/stripchat.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/chaturbate.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/bongacams.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/camsoda.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo platform-logo-dark"><img src="../assets/logos/flirt4free-white.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/myfreecams.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/streamate.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/eplay.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/cams.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/cherrytv.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/manyvids.png" alt="" width="120" height="48"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLATAFORMAS · OPCIÓN B: doble fila en contraflujo ============ -->
+  <section class="platforms-strip platforms-dual" aria-label="Plataformas compatibles (opción B)">
+    <p class="variant-tag">Opción B · Doble fila en contraflujo</p>
+    <div class="platforms-head">
+      <span class="platforms-line" aria-hidden="true"></span>
+      <p>11 plataformas conectadas a tu operación</p>
+      <span class="platforms-line" aria-hidden="true"></span>
+    </div>
+    <div class="platforms-slider" aria-hidden="true">
+      <div class="platforms-track track-slow">
+        <div class="platform-logo"><img src="../assets/logos/stripchat.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/chaturbate.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/bongacams.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/camsoda.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo platform-logo-dark"><img src="../assets/logos/flirt4free-white.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/myfreecams.png" alt="" width="120" height="48"></div>
+        <!-- loop -->
+        <div class="platform-logo"><img src="../assets/logos/stripchat.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/chaturbate.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/bongacams.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/camsoda.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo platform-logo-dark"><img src="../assets/logos/flirt4free-white.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/myfreecams.png" alt="" width="120" height="48"></div>
+      </div>
+      <div class="platforms-track track-reverse">
+        <div class="platform-logo"><img src="../assets/logos/streamate.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/eplay.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/cams.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/cherrytv.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/manyvids.png" alt="" width="120" height="48"></div>
+        <!-- loop -->
+        <div class="platform-logo"><img src="../assets/logos/streamate.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/eplay.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/cams.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/cherrytv.png" alt="" width="120" height="48"></div>
+        <div class="platform-logo"><img src="../assets/logos/manyvids.png" alt="" width="120" height="48"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLATAFORMAS · OPCIÓN C: panel oscuro con grid y halo ============ -->
+  <section class="platforms-showcase" aria-label="Plataformas compatibles (opción C)">
+    <p class="variant-tag variant-tag-light">Opción C · Panel integrado</p>
+    <div class="container">
+      <div class="showcase-head">
+        <p class="eyebrow eyebrow-light">Integraciones</p>
+        <h2>Conectado con las plataformas <span class="text-gradient">donde ya transmites</span></h2>
+      </div>
+      <div class="showcase-grid">
+        <div class="showcase-logo"><img src="../assets/logos/stripchat.png" alt="StripChat"></div>
+        <div class="showcase-logo"><img src="../assets/logos/chaturbate.png" alt="Chaturbate"></div>
+        <div class="showcase-logo"><img src="../assets/logos/bongacams.png" alt="BongaCams"></div>
+        <div class="showcase-logo"><img src="../assets/logos/camsoda.png" alt="CamSoda"></div>
+        <div class="showcase-logo"><img src="../assets/logos/flirt4free-white.png" alt="Flirt4Free"></div>
+        <div class="showcase-logo"><img src="../assets/logos/myfreecams.png" alt="MyFreeCams"></div>
+        <div class="showcase-logo"><img src="../assets/logos/streamate.png" alt="Streamate"></div>
+        <div class="showcase-logo"><img src="../assets/logos/eplay.png" alt="ePlay"></div>
+        <div class="showcase-logo"><img src="../assets/logos/cams.png" alt="Cams.com"></div>
+        <div class="showcase-logo"><img src="../assets/logos/cherrytv.png" alt="CherryTV"></div>
+        <div class="showcase-logo"><img src="../assets/logos/manyvids.png" alt="ManyVids"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="section" id="problema">
+    <div class="container">
+      <div class="section-head text-center reveal">
+        <p class="eyebrow">El problema</p>
+        <h2>Cada minuto de inactividad es dinero <span class="text-copper">que no vuelve</span></h2>
+        <p class="section-lead mx-auto">Sin supervisión constante, tu estudio pierde ingresos todos los días — y la mayoría de las veces nadie se entera a tiempo.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="card-soft reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <h3>Inactividad invisible</h3>
+            <p>Salas detenidas por horas sin que ningún supervisor humano lo note.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card-soft reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l6-6 4 4 8-8"/><path d="M21 7v6h-6"/></svg>
+            </div>
+            <h3>Pérdida de ingresos</h3>
+            <p>Cada hora sin actividad es facturación que tu estudio nunca recupera.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card-soft reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="2.4"/><line x1="3" y1="3" x2="21" y2="21"/></svg>
+            </div>
+            <h3>Cero visibilidad</h3>
+            <p>Sin datos en tiempo real, decides a ciegas sobre tu propia operación.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUCIÓN -->
+  <section class="section section-dark" id="solucion">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal">
+          <p class="eyebrow eyebrow-light">La solución</p>
+          <h2>Conoce la <span class="text-gradient">Tecnología Sentinel</span></h2>
+          <p class="section-lead">El motor de visión por computadora de Elitte Nexus audita cada sala 24/7, detecta inactividad y fallas técnicas en segundos, y avisa a tu equipo antes de que el problema cueste dinero.</p>
+          <ul class="check-list">
+            <li>Detección de inactividad y fallas técnicas en segundos, no en horas</li>
+            <li>Alerta si una modelo cobra por fuera de la plataforma — protege tus ingresos</li>
+            <li>Detecta contenido que incumple las reglas de cada plataforma</li>
+            <li>Alertas automáticas por WhatsApp a tu equipo</li>
+          </ul>
+          <a class="btn btn-cta" href="#empieza"><span aria-hidden="true">↗</span> Quiero ver Sentinel en acción</a>
+        </div>
+
+        <div class="col-lg-6 reveal">
+          <figure class="media-frame tilt-target">
+            <img src="../assets/platform-monitor.jpg" alt="Dashboard de monitoreo Sentinel" loading="lazy">
+            <figcaption>Portal EN · Monitoreo en vivo</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <div class="section-head text-center reveal">
+        <p class="eyebrow">Beneficios</p>
+        <h2>Todo lo que ganas con <span class="text-copper">Elitte Nexus</span></h2>
+        <p class="section-lead mx-auto">Tecnología, control y rentabilidad trabajando juntos — sin que tengas que estar encima de cada sala.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="card-soft reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2.5"/></svg>
+            </div>
+            <h3>Monitoreo 24/7</h3>
+            <p>Supervisión constante con IA, sin turnos ni descansos.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="card-soft reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5m0 14h16M8 15l3-4 3 3 4-6"/></svg>
+            </div>
+            <h3>Reportes automáticos</h3>
+            <p>Métricas y PDFs con tu branding, generados en segundos — no en horas de armar planillas.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="card-soft reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 4v5c0 5-3.4 7.6-8 9-4.6-1.4-8-4-8-9V7l8-4Z"/></svg>
+            </div>
+            <h3>Seguridad de datos</h3>
+            <p>Roles, permisos y logs trazables en cada acción.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="card-soft reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+            </div>
+            <h3>Alertas en tiempo real</h3>
+            <p>Notificaciones inmediatas ante cualquier inactividad.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="card-soft reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10M12 20V4M20 20v-7"/></svg>
+            </div>
+            <h3>Escalabilidad total</h3>
+            <p>De 5 a 500 salas sin rehacer tu operación.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="card-soft reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3>Rentabilidad medible</h3>
+            <p>Detecta una sala inactiva en menos de 60 segundos y recupera ingresos que antes se perdían por horas.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÓDULOS con imágenes reales -->
+  <section class="section section-mist" id="modulos">
+    <div class="container">
+      <div class="section-head text-center reveal">
+        <p class="eyebrow">Módulos</p>
+        <h2>Un ecosistema, <span class="text-copper">toda tu operación</span></h2>
+        <p class="section-lead mx-auto">Cada módulo de Elitte Nexus es un producto propio dentro de un mismo sistema — no herramientas sueltas pegadas con cinta.</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-6">
+          <article class="module-visual reveal tilt-target">
+            <img src="../assets/module-rooms.jpg" alt="Monitoreo de salas" loading="lazy">
+            <div class="module-visual-copy">
+              <span class="module-brand">Sentinel</span>
+              <span class="module-num">01</span>
+              <h3>Monitoreo de salas</h3>
+              <p>Visión por computadora que detecta inactividad, fallas técnicas y cobros por fuera de la plataforma — todo en tiempo real.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-6">
+          <article class="module-visual reveal tilt-target">
+            <img src="../assets/module-payroll.jpg" alt="Nómina y ciclos" loading="lazy">
+            <div class="module-visual-copy">
+              <span class="module-num">02</span>
+              <h3>Nómina y ciclos</h3>
+              <p>Liquida la nómina de tu estudio en minutos, no en días: TRM en vivo, PDF con tu branding y trazabilidad completa.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-6">
+          <article class="module-visual reveal tilt-target">
+            <img src="../assets/collage-b.jpg" alt="Analítica en vivo" loading="lazy">
+            <div class="module-visual-copy">
+              <span class="module-num">03</span>
+              <h3>Analítica en vivo</h3>
+              <p>Rankings, métricas y tendencias de toda tu red actualizados al instante, sin exportar planillas.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-6">
+          <article class="module-visual reveal tilt-target">
+            <img src="../assets/collage-a.jpg" alt="Operaciones centralizadas" loading="lazy">
+            <div class="module-visual-copy">
+              <span class="module-num">04</span>
+              <h3>Operaciones centralizadas</h3>
+              <p>Un solo panel para administrar toda tu red de estudios, con Super Admin y permisos por rol.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section class="section section-dark" id="planes">
+    <div class="container">
+      <div class="section-head text-center reveal">
+        <p class="eyebrow eyebrow-light">Planes</p>
+        <h2>Precios pensados para <span class="text-gradient">competir de verdad</span></h2>
+        <p class="section-lead mx-auto">Más tecnología (monitoreo con IA y automatización por WhatsApp) que las alternativas del mercado, a un precio que no las duplica.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <article class="price-card reveal">
+            <p class="price-tier">Básico</p>
+            <p class="price-amount">$59<span>/mes</span></p>
+            <p class="price-desc">Para estudios que arrancan con control operativo claro.</p>
+            <ul>
+              <li>Hasta 15 salas</li>
+              <li>Gestión de modelos y documentos</li>
+              <li>Nómina esencial</li>
+              <li>1 línea de WhatsApp</li>
+            </ul>
+            <a class="btn btn-glass" href="#empieza">Consultar Básico</a>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="price-card price-card-featured reveal">
+            <span class="price-badge">Más elegido</span>
+            <p class="price-tier">Pro</p>
+            <p class="price-amount">$169<span>/mes</span></p>
+            <p class="price-desc">Monitoreo con IA y automatización para operación diaria.</p>
+            <ul>
+              <li>Hasta 60 salas</li>
+              <li>Monitoreo visual con Sentinel</li>
+              <li>WhatsApp IA y coaching</li>
+              <li>Reportes PDF con tu branding</li>
+              <li>Soporte prioritario</li>
+            </ul>
+            <a class="btn btn-cta" href="#empieza"><span aria-hidden="true">↗</span> Empezar con Pro</a>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="price-card reveal">
+            <p class="price-tier">Enterprise Plus</p>
+            <p class="price-amount">Custom</p>
+            <p class="price-desc">Red multi-estudio con gobernanza, roles y escala sin techo.</p>
+            <ul>
+              <li>Salas ilimitadas / multi-tenant</li>
+              <li>Super Admin y logs de seguridad</li>
+              <li>Integraciones a medida</li>
+              <li>SLA y onboarding dedicado</li>
+            </ul>
+            <a class="btn btn-glass" href="#empieza"><span aria-hidden="true">↗</span> Hablar con ventas</a>
+          </article>
+        </div>
+      </div>
+
+      <p class="price-note reveal">Precios de referencia en USD — los ajustamos contigo según el tamaño de tu estudio. Sin costos de instalación, sin permanencia.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head text-center reveal">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Antes de dar el <span class="text-copper">siguiente paso</span></h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            ¿Qué tan seguros están los datos de mi estudio y mis modelos?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer"><p>La seguridad opera en dos frentes: el de tu estudio y el del aplicativo. A nivel de estudio, la arquitectura es multi-tenant: nadie puede acceder a un estudio sin sus propias credenciales, y ningún estudio puede ver documentos ni información de otro estudio dentro de la plataforma — el aislamiento es total. A nivel de plataformas de streaming, Elitte Nexus nunca pide ni almacena las contraseñas de tus cuentas en StripChat, Chaturbate, BongaCams y demás sitios; no las necesita para operar, así que ese riesgo no existe ni aunque quisieras dárselas. A nivel de infraestructura, contamos con un módulo que detecta IPs que intentan ingresar de forma no autorizada, bloqueo automático de esos intentos, bloqueo de accesos por VPN, y protección respaldada por Firebase y Cloudflare — los mismos estándares que usan las plataformas más grandes del mundo. Esto incluye seguridad unificada basada en IA que protege la aplicación, las APIs y la red contra ataques DDoS, bots maliciosos y filtración de datos, sin sacrificar rendimiento ni disponibilidad.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            ¿Cuánto tiempo toma poner en marcha mi estudio en la plataforma?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer"><p>El onboarding esencial (perfiles, documentos y conexión de salas) puede completarse en pocos días. Los planes Pro y Enterprise Plus incluyen acompañamiento dedicado para acelerar el proceso.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            ¿Se integra con las plataformas donde ya transmito?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer"><p>Sí. Elitte Nexus es compatible con StripChat, Chaturbate, BongaCams, CamSoda, Flirt4Free, MyFreeCams, Streamate, ePlay, Cams.com, CherryTV y ManyVids.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            ¿Cómo se comparan sus precios con otras plataformas del mercado?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer"><p>Nuestro plan Básico compite directo con las alternativas más económicas del mercado, pero incluye monitoreo con visión por computadora (Sentinel) y automatización por WhatsApp con IA — funciones que la mayoría de esas plataformas no ofrece.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            ¿Puedo cancelar o cambiar de plan cuando lo necesite?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer"><p>Sí, no manejamos cláusulas de permanencia. Los planes se ajustan al tamaño real de tu operación; escríbenos y revisamos contigo el cambio o la cancelación sin letra pequeña.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG / RECURSOS -->
+  <section class="section section-mist" id="recursos">
+    <div class="container">
+      <div class="section-head text-center reveal">
+        <p class="eyebrow">Recursos</p>
+        <h2>Contenido para <span class="text-copper">mánagers de estudio</span></h2>
+        <p class="section-lead mx-auto">Guías y análisis sobre operación, nómina y tecnología para estudios webcam. Estamos escribiendo el primer lote — déjanos tu contacto y te avisamos apenas salga.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="blog-card reveal">
+            <span class="blog-tag">Operación</span>
+            <h3>Cómo reducir el tiempo de nómina en tu estudio</h3>
+            <p>Los errores manuales de liquidación cuestan más de lo que parece — así se automatizan sin perder control.</p>
+            <button type="button" class="blog-link" data-modal-open="modal-notify" data-article="Cómo reducir el tiempo de nómina en tu estudio">Avísame cuando salga ↗</button>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="blog-card reveal">
+            <span class="blog-tag">Tecnología</span>
+            <h3>5 señales de que necesitas monitoreo con IA</h3>
+            <p>Si tu supervisión depende de que alguien esté mirando en el momento exacto, ya estás perdiendo dinero.</p>
+            <button type="button" class="blog-link" data-modal-open="modal-notify" data-article="5 señales de que necesitas monitoreo con IA">Avísame cuando salga ↗</button>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="blog-card reveal">
+            <span class="blog-tag">Cumplimiento</span>
+            <h3>Guía rápida: protección de datos en estudios webcam</h3>
+            <p>Qué exige la ley sobre los datos de tus modelos y cómo una plataforma centralizada te protege.</p>
+            <button type="button" class="blog-link" data-modal-open="modal-notify" data-article="Guía rápida: protección de datos en estudios webcam">Avísame cuando salga ↗</button>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPIEZA AHORA -->
+  <section class="cta-final" id="empieza">
+    <div class="cta-bg" aria-hidden="true">
+      <img src="../assets/cta-network.jpg" alt="" loading="lazy">
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-panel reveal">
+        <p class="eyebrow eyebrow-light">Empieza ahora</p>
+        <h2>Lleva tu estudio al siguiente nivel<br>con <span class="text-gradient">control total en tiempo real</span></h2>
+        <p class="section-lead mx-auto">Agenda una demo y descubre cómo Sentinel elimina los puntos ciegos de tu operación desde el primer día.</p>
+        <div class="hero-ctas justify-content-center">
+          <a class="btn btn-cta btn-lg" href="https://wa.me/573008587571?text=Hola%2C%20quiero%20una%20demo%20de%20Elitte%20Nexus" target="_blank" rel="noopener"><span aria-hidden="true">↗</span> Quiero mi demo</a>
+          <a class="btn btn-glass btn-lg" href="mailto:contacto@elittenexus.com">Hablar con ventas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer-full">
+  <div class="container footer-grid">
+    <div class="footer-col footer-brand">
+      <a class="logo" href="#top">
+        <img class="logo-img" src="../assets/brand/elitte-nexus-icon-2048x2048-fondo.png" alt="" width="36" height="36">
+        <span class="logo-text">ELITTE <span class="text-copper">NEXUS</span></span>
+      </a>
+      <p class="footer-tagline">Tecnología Sentinel: monitoreo con IA, nómina y automatización, para estudios que quieren control total en tiempo real.</p>
+      <div class="footer-contact">
+        <a href="https://wa.me/573008587571?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Elitte%20Nexus" target="_blank" rel="noopener">WhatsApp: +57 300 858 7571</a>
+        <a href="mailto:contacto@elittenexus.com">contacto@elittenexus.com</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com/elittenexus" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+        <a href="https://linkedin.com/company/[placeholder]" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A6 6 0 0 1 16 8Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://x.com/[placeholder]" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4l16 16M20 4 4 20"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <a href="#problema">El problema</a>
+      <a href="#solucion">Sentinel</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#modulos">Módulos</a>
+      <a href="#empieza">Contacto</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Producto</h4>
+      <a href="#solucion">Monitoreo de salas</a>
+      <a href="#modulos">Nómina y ciclos</a>
+      <a href="#beneficios">Automatización IA</a>
+      <a href="/app/">Portal de administración</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <button type="button" class="footer-link-btn" data-modal-open="modal-terminos">Términos y Condiciones</button>
+      <button type="button" class="footer-link-btn" data-modal-open="modal-privacidad">Política de Privacidad y Protección de Datos</button>
+      <button type="button" class="footer-link-btn" data-modal-open="modal-cookies">Política de Cookies</button>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2026 [Razón social — placeholder] · NIT [placeholder] · Bogotá, Colombia</p>
+    <p><a href="/app/">Portal de administración</a></p>
+  </div>
+
+  <div class="credits-bar">
+    <span class="credits-label">Diseñado por</span>
+    <a href="https://somosnovatech.com" target="_blank" rel="noopener">
+      <img src="../assets/agency/novatech_logo.png" alt="NovaTech" class="credits-logo">
+    </a>
+    <a href="mailto:novatech.cosanova@gmail.com" class="credits-link">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+      novatech.cosanova@gmail.com
+    </a>
+    <span class="credits-sep">·</span>
+    <a href="tel:+573001885210" class="credits-link">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.28 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16h.27z"/></svg>
+      +57 300 188 52 10
+    </a>
+  </div>
+</footer>
+
+<!-- Modal: Términos y Condiciones -->
+<div class="legal-modal" id="modal-terminos" aria-hidden="true">
+  <div class="legal-modal-backdrop" data-modal-close></div>
+  <div class="legal-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-terminos-title">
+    <button type="button" class="legal-modal-close" data-modal-close aria-label="Cerrar">✕</button>
+    <h2 id="modal-terminos-title">Términos y Condiciones</h2>
+    <p class="legal-modal-updated">Última actualización: [fecha — placeholder]</p>
+
+    <h3>1. Identificación</h3>
+    <p>Elitte Nexus es una plataforma de software para la gestión operativa de estudios de transmisión en vivo, ofrecida por [Razón social — placeholder], con domicilio en Bogotá, Colombia.</p>
+
+    <h3>2. Objeto del servicio</h3>
+    <p>Elitte Nexus provee herramientas de monitoreo, nómina, gestión de modelos y automatización mediante suscripción, según el plan contratado.</p>
+
+    <h3>3. Planes y precios</h3>
+    <p>Los precios publicados son de referencia y pueden ajustarse según el tamaño de la operación del estudio, previo acuerdo con el cliente.</p>
+
+    <h3>4. Obligaciones del usuario</h3>
+    <p>El usuario se compromete a hacer un uso lícito de la plataforma, mantener la confidencialidad de sus credenciales de acceso y suministrar información veraz.</p>
+
+    <h3>5. Propiedad intelectual</h3>
+    <p>El software, la marca y los contenidos de Elitte Nexus son propiedad de [Razón social — placeholder]. Su uso no autorizado está prohibido.</p>
+
+    <h3>6. Limitación de responsabilidad</h3>
+    <p>Elitte Nexus no se hace responsable por decisiones operativas tomadas con base en la información generada por la plataforma, ni por interrupciones del servicio ajenas a su control.</p>
+
+    <h3>7. Contacto</h3>
+    <p>Para dudas sobre estos términos, escríbenos a <a href="mailto:contacto@elittenexus.com">contacto@elittenexus.com</a> o por WhatsApp al +57 300 858 7571.</p>
+  </div>
+</div>
+
+<!-- Modal: Política de Privacidad y Protección de Datos -->
+<div class="legal-modal" id="modal-privacidad" aria-hidden="true">
+  <div class="legal-modal-backdrop" data-modal-close></div>
+  <div class="legal-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-privacidad-title">
+    <button type="button" class="legal-modal-close" data-modal-close aria-label="Cerrar">✕</button>
+    <h2 id="modal-privacidad-title">Política de Privacidad y Protección de Datos</h2>
+    <p class="legal-modal-updated">Última actualización: [fecha — placeholder] · Tratamiento de datos conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013 de la República de Colombia (Habeas Data).</p>
+
+    <h3>1. Responsable del tratamiento</h3>
+    <p>[Razón social — placeholder], con domicilio en Bogotá, Colombia y correo de contacto <a href="mailto:contacto@elittenexus.com">contacto@elittenexus.com</a>, es responsable del tratamiento de los datos personales recolectados a través de este sitio y de la plataforma Elitte Nexus.</p>
+
+    <h3>2. Datos recopilados</h3>
+    <p>Recopilamos datos de contacto (nombre, WhatsApp, correo electrónico) que el usuario suministra voluntariamente al solicitar una demostración o comunicarse con nosotros, así como datos operativos del estudio (número de salas, documentos de modelos) al usar la plataforma bajo un plan contratado.</p>
+
+    <h3>3. Finalidad del tratamiento</h3>
+    <p>Los datos se usan para: (a) responder solicitudes de información y demostraciones, (b) prestar el servicio contratado, (c) enviar comunicaciones comerciales relacionadas con Elitte Nexus, y (d) cumplir obligaciones legales y contractuales.</p>
+
+    <h3>4. Derechos del titular</h3>
+    <p>De acuerdo con la Ley 1581 de 2012, el titular de los datos tiene derecho a: conocer, actualizar y rectificar sus datos personales; solicitar prueba de la autorización otorgada; ser informado sobre el uso dado a sus datos; presentar quejas ante la Superintendencia de Industria y Comercio; revocar la autorización y/o solicitar la supresión del dato cuando no exista un deber legal o contractual que impida su eliminación; y acceder de forma gratuita a sus datos personales.</p>
+
+    <h3>5. Procedimiento para ejercer sus derechos</h3>
+    <p>Puede ejercer estos derechos escribiendo a <a href="mailto:contacto@elittenexus.com">contacto@elittenexus.com</a> o al WhatsApp +57 300 858 7571, indicando su solicitud. Responderemos dentro de los términos establecidos por la ley aplicable.</p>
+
+    <h3>6. Seguridad de la información</h3>
+    <p>Implementamos medidas técnicas y administrativas razonables para proteger los datos personales contra acceso no autorizado, pérdida o alteración.</p>
+
+    <h3>7. Vigencia</h3>
+    <p>Esta política rige desde su fecha de publicación y permanecerá vigente mientras Elitte Nexus preste sus servicios, pudiendo ser actualizada para reflejar cambios legales u operativos.</p>
+  </div>
+</div>
+
+<!-- Modal: Política de Cookies -->
+<div class="legal-modal" id="modal-cookies" aria-hidden="true">
+  <div class="legal-modal-backdrop" data-modal-close></div>
+  <div class="legal-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-cookies-title">
+    <button type="button" class="legal-modal-close" data-modal-close aria-label="Cerrar">✕</button>
+    <h2 id="modal-cookies-title">Política de Cookies</h2>
+    <p class="legal-modal-updated">Última actualización: [fecha — placeholder]</p>
+
+    <h3>1. Qué son las cookies</h3>
+    <p>Las cookies son pequeños archivos que se almacenan en su dispositivo al visitar este sitio, y que permiten recordar preferencias y mejorar su experiencia de navegación.</p>
+
+    <h3>2. Cookies que usamos</h3>
+    <p>Este sitio puede usar cookies técnicas necesarias para su funcionamiento y, si se integran herramientas de analítica o publicidad en el futuro, cookies de medición de audiencia. No usamos cookies para vender datos a terceros.</p>
+
+    <h3>3. Cómo desactivarlas</h3>
+    <p>Puede configurar su navegador para bloquear o eliminar cookies. Tenga en cuenta que desactivarlas podría afectar el funcionamiento de algunas partes del sitio.</p>
+  </div>
+</div>
+
+<!-- Modal: Avísame cuando salga (blog/recursos) -->
+<div class="legal-modal" id="modal-notify" aria-hidden="true">
+  <div class="legal-modal-backdrop" data-modal-close></div>
+  <div class="legal-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-notify-title">
+    <button type="button" class="legal-modal-close" data-modal-close aria-label="Cerrar">✕</button>
+    <h2 id="modal-notify-title">Te avisamos cuando salga</h2>
+    <p class="legal-modal-updated" id="notifyArticleTitle">Artículo</p>
+
+    <form class="notify-form" id="notifyForm">
+      <label>
+        Email
+        <input type="email" name="email" required autocomplete="email" placeholder="tu@email.com">
+      </label>
+      <button class="btn btn-cta" type="submit">Avisarme por WhatsApp</button>
+      <p class="notify-form-note" id="notifyFormNote" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Aviso de cookies" hidden>
+  <p>Usamos cookies para mejorar tu experiencia en este sitio. Al continuar navegando aceptas nuestra <button type="button" class="footer-link-btn cookie-banner-link" data-modal-open="modal-cookies">Política de Cookies</button>.</p>
+  <div class="cookie-banner-actions">
+    <button type="button" class="btn btn-glass btn-sm" id="cookieDecline">Rechazar</button>
+    <button type="button" class="btn btn-cta btn-sm" id="cookieAccept">Aceptar</button>
+  </div>
+</div>
+
+<!-- Widget: Nexus IA (bot de preguntas frecuentes) -->
+<button type="button" class="bot-toggle" id="botToggle" aria-label="Abrir Nexus IA, el asistente de Elitte Nexus" aria-expanded="false" aria-controls="botPanel">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+    <path d="M12 3C6.9 3 3 6.5 3 11c0 2.4 1.2 4.6 3.1 6.1L5 21l4.3-1.9c.9.2 1.8.3 2.7.3 5.1 0 9-3.5 9-8S17.1 3 12 3Z"/>
+    <circle cx="8.5" cy="11" r="1" fill="currentColor" stroke="none"/>
+    <circle cx="12" cy="11" r="1" fill="currentColor" stroke="none"/>
+    <circle cx="15.5" cy="11" r="1" fill="currentColor" stroke="none"/>
+  </svg>
+</button>
+
+<div class="bot-panel" id="botPanel" aria-hidden="true">
+  <div class="bot-header">
+    <div class="bot-header-info">
+      <span class="bot-avatar">IA</span>
+      <div>
+        <strong>Nexus IA</strong>
+        <span>Respuestas al instante</span>
+      </div>
+    </div>
+    <button type="button" class="bot-close" id="botClose" aria-label="Cerrar asistente">✕</button>
+  </div>
+  <div class="bot-body">
+    <div class="bot-messages" id="botMessages"></div>
+    <div class="bot-quick-replies" id="botQuickReplies"></div>
+  </div>
+  <div class="bot-footer">
+    <a href="https://wa.me/573008587571?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20Elitte%20Nexus" target="_blank" rel="noopener">¿No encontraste tu respuesta? Escríbenos por WhatsApp ↗</a>
+  </div>
+</div>
+
+<a
+  class="whatsapp-float"
+  href="https://wa.me/573008587571?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Elitte%20Nexus"
+  target="_blank"
+  rel="noopener"
+  aria-label="Escríbenos por WhatsApp"
+>
+  <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor" aria-hidden="true">
+    <path d="M16.004 3C9.377 3 4 8.373 4 15c0 2.34.665 4.523 1.817 6.376L4 29l7.803-1.786A11.93 11.93 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3Zm0 21.818a9.76 9.76 0 0 1-4.98-1.363l-.357-.212-4.63 1.06 1.09-4.512-.234-.37A9.77 9.77 0 0 1 5.19 15c0-5.968 4.848-10.818 10.814-10.818S26.818 9.032 26.818 15 21.97 24.818 16.004 24.818Zm5.62-7.61c-.308-.154-1.823-.9-2.106-1.003-.283-.103-.489-.154-.694.155-.205.308-.797 1.003-.978 1.208-.18.205-.36.23-.668.077-.308-.154-1.3-.479-2.477-1.528-.916-.817-1.535-1.826-1.715-2.134-.18-.308-.02-.474.135-.628.139-.138.308-.36.462-.54.154-.18.205-.308.308-.514.103-.205.051-.385-.026-.54-.077-.154-.694-1.673-.951-2.29-.25-.6-.505-.52-.694-.53l-.591-.01c-.205 0-.54.077-.822.385-.283.308-1.08 1.055-1.08 2.573 0 1.518 1.106 2.984 1.26 3.19.154.205 2.177 3.325 5.276 4.663.737.318 1.312.508 1.76.65.739.235 1.412.202 1.944.123.593-.089 1.823-.745 2.08-1.464.257-.72.257-1.336.18-1.464-.077-.129-.283-.206-.591-.36Z"/>
+  </svg>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
