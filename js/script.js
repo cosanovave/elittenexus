@@ -273,7 +273,7 @@
 })();
 
 (() => {
-  const STORAGE_KEY = 'elittxus_cookie_consent';
+  const STORAGE_KEY = 'elittenexus_cookie_consent';
   const banner = document.getElementById('cookieBanner');
   if (!banner) return;
 
@@ -355,7 +355,7 @@
     {
       name: 'Precios y planes',
       questions: [
-        { q: '¿Cuánto cuesta Elitte Nexus?', a: 'Básico desde $59/mes (hasta 15 salas), Pro desde $169/mes (hasta 60 salas), Enterprise Plus a medida para redes multi-estudio.' },
+        { q: '¿Cuánto cuesta Elitte Nexus?', a: 'Básico desde $60/mes (hasta 15 salas), Pro desde $80/mes (hasta 60 salas), Enterprise Plus desde $150/mes para redes multi-estudio.' },
         { q: '¿Diferencia entre el plan Básico y el Pro?', a: 'El Pro incluye monitoreo visual con Sentinel, WhatsApp IA, reportes con tu branding y soporte prioritario; el Básico cubre lo esencial de gestión y nómina.' },
         { q: '¿Tienen permanencia mínima o costo de instalación?', a: 'No. Sin cláusulas de permanencia y sin costos de instalación en ningún plan.' },
         { q: '¿Puedo cambiar de plan o cancelar después?', a: 'Sí, los planes se ajustan al tamaño real de tu operación sin letra pequeña.' },
